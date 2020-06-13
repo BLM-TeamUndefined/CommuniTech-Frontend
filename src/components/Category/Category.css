@@ -1,0 +1,24 @@
+.Category {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 16.66rem;
+    margin: 0 .5rem 2.3rem .5rem;
+  }
+
+  .Category img {
+      height: 10em;
+  }
+  
+  .Category .image-container {
+    height: 16.66rem;
+    margin-bottom: 1rem;
+  }
+  
+  .Category h2 {
+    margin-bottom: .5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  
+  
