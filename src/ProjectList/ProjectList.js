@@ -2,8 +2,7 @@ import React from 'react';
 import './ProjectList.css';
 import Project from '../Project/Project';
 
-class ProjectList extends React.Component {
-    render(){
+function ProjectList() {
         return(
             <div className="ProjectList">
                 {
@@ -13,7 +12,6 @@ class ProjectList extends React.Component {
                 }
             </div>
         );
-    }
 }
 
 export default ProjectList;
