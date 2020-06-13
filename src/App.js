@@ -1,5 +1,9 @@
-import React, {useEffect} from 'react';
+
+import React from 'react';
+import Form from './components/Form'
 import './App.css';
+
+
 function App() {
   // useEffect(() => {
   //   if (localStorage.token) {
@@ -18,6 +22,8 @@ function App() {
   return (
     <div className="App">
       CommuniTech
+
+      <Form/>
     </div>
   );
 }
