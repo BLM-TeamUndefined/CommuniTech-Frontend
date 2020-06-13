@@ -1,5 +1,4 @@
 import React, {useEffect} from 'react';
-import Form from './components/Form'
 import './App.css';
 function App() {
   // useEffect(() => {
@@ -19,7 +18,6 @@ function App() {
   return (
     <div className="App">
       CommuniTech
-      <Form/>
     </div>
   );
 }
