@@ -2,12 +2,12 @@ import React from 'react';
 import './Category.css';
 
 
-function Category() {
+function Category(props) {
         return(
             <div className="Category">
                 <div className="image-container">
-                    <h2> {this.props.category.name} </h2>
-                    <img src={this.props.category.image} alt=''/>
+                    <h2> {props.category.name} </h2>
+                    <img src={props.category.image} alt=''/>
                 </div>
             </div>
         );
