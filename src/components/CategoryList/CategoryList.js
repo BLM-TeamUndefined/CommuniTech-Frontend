@@ -7,7 +7,7 @@ function CategoryList() {
             <div className="CategoryList">
                 {
                 this.props.categories.map(category => {
-                    return <Project key={category.id} category={category}/>;
+                    return <Category key={category.id} category={category}/>;
                 })
                 }
             </div>

@@ -1,12 +1,12 @@
 import React from 'react';
+import useState from 'react';
 import logo from './logo.svg';
 import './App.css';
-import CategoryList from '../CategoryList/CategoryList';
-import React, {useState} from 'react';
+import CategoryList from './components/CategoryList/CategoryList';
 
 function App() {
 
-  const [categories, setCategories] = useState([]);
+ // const [categories, setCategories] = useState([]);
 
   
   return (
