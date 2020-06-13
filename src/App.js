@@ -1,19 +1,26 @@
-import React from 'react';
-import useState from 'react';
-import logo from './logo.svg';
+import React, {useEffect} from 'react';
+import Form from './components/Form'
 import './App.css';
-import CategoryList from './components/CategoryList/CategoryList';
-
 function App() {
-
- // const [categories, setCategories] = useState([]);
-
-  
+  // useEffect(() => {
+  //   if (localStorage.token) {
+  //     fetch("http://localhost:3000/persist",{
+  //       headers: {
+  //         "Authorization": `Bearer ${localStorage.token}`
+  //       }
+  //     })
+  //     .then(resp => resp.json())
+  //     .then(handleResp)
+  //   }
+  //   }
+  // )
+  // const handleResp = () => {
+  // }
   return (
     <div className="App">
-      <CategoryList categories={this.state.categories}/>
+      CommuniTech
+      <Form/>
     </div>
   );
 }
-
 export default App;
