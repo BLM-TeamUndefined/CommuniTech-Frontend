@@ -1,24 +1,11 @@
-import React, {useState} from 'react'
+import React from 'react'
 import {useForm} from 'react-hook-form'
 
 const Form = () => {
 
 //useForm Hook
     const {register, handleSubmit, errors} = useForm();
-    // const [username, setUsername] = useState('')
-    // const [password, setPassword] = useState('')
-    // const [email, setEmail] = useState('')
-    // const [bio, setBio] = useState('')
-    // const [profession, setProfession] = useState('')
-    // const [techstack, setTechstack] = useState('')
-
-    // const handleSubmit = (event) => {
-    //     // setUsername(event.target.value)
-    //     // setPassword(event.target.value)
-    //     // setBio(event.target.value)
-    //     // setProfession(event.target.value)
-    //     // setTechstack(event.target.value)
-    // }
+ 
     
     const onSubmit = (data) => {
         console.log(data)
@@ -26,7 +13,7 @@ const Form = () => {
 
     return (
         //pass register as ref to handle and track changes. Don't need to track changes and values manually
-        //onSubmit as a callback - get a processed object with all our form
+        //onSubmit as a callback - returns an object with all our form data
         //pass validations to register fn as optional arguments
         <div>
             <h1>Form Component</h1>
@@ -41,10 +28,6 @@ const Form = () => {
                 <input type="text" placeholder="TechStack" name="techstack" ref={register}/>
                 <input type="submit"/>
             </form>
-            
-
-
-
         </div>
     )
 }
