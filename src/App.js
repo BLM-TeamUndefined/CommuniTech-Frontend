@@ -1,5 +1,9 @@
-
 import React from 'react';
+import Form from './components/Form'
+import Project from './components/project'
+import Home from './components/home'
+import ProjectIndex from './components/project-index'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import {Switch, Route} from 'react-router-dom'
 import userForm from './components/UserForm'
 // import NavBar from './components/NavBar'
@@ -164,4 +168,3 @@ import {withRouter} from 'react-router-dom'
 }
 
 export default withRouter(App)
-
