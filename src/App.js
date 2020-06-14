@@ -6,6 +6,7 @@ import UserForm from './components/UserForm'
 import CategoryList from './components/CategoryList/CategoryList'
 import OrganizationList from './components/OrganizationList/OrganizationList'
 import ProjectList from './components/ProjectList/ProjectList'
+import AccountType from './components/AccountType/AccountType'
 
 // import 'semantic-ui-css/semantic.min.css'
 import './App.css';
@@ -95,6 +96,10 @@ import {withRouter} from 'react-router-dom'
     }
   }
 
+  renderAccountType = () => {
+    return <AccountType />
+  }
+
   renderCategoryList = () => {
     return <CategoryList
             categories = {this.state.categories}
@@ -121,6 +126,7 @@ import {withRouter} from 'react-router-dom'
     return (
       <div className="App">
         <Switch>
+          <Route path="/accountType" render={ this.renderAccountType } />
           <Route path="/login" render={ this.renderForm } />
           <Route path="/register" render={ this.renderForm } />
           <Route path="/categories" render={ this.renderCategoryList }/>
