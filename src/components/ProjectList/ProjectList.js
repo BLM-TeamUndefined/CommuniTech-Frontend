@@ -21,12 +21,12 @@ class ProjectList extends React.Component {
        return this.props.projects 
         ?
           this.props.projects.map(project => {
-          return <Project key={project.id} project={project} renderProjects={this.props.project}/>;
+          return <Project  key={project.id} project={project} renderProjects={this.props.project}/>;
         })
         :
         this.state.projects.map(project => {
             console.log(project)
-            return <Project key={project.id} project={project}/>;
+            return <Project  key={project.id} project={project}/>;
         })
     }
 

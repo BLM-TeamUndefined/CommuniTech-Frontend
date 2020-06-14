@@ -58,16 +58,16 @@ import {withRouter} from 'react-router-dom'
   }
   
 
-  componentDidMount() {
-    if (localStorage.token) {
-      fetch("http://localhost:3000/professional_persist",{
-        headers: {
-          "Authorization": `Bearer ${localStorage.token}`
-        }
-      })
-      .then(resp => resp.json())
-      .then(this.handleResp)
-    }
+  // componentDidMount() {
+  //   if (localStorage.token) {
+  //     fetch("http://localhost:3000/professional_persist",{
+  //       headers: {
+  //         "Authorization": `Bearer ${localStorage.token}`
+  //       }
+  //     })
+  //     .then(resp => resp.json())
+  //     .then(this.handleResp)
+  //   }
 
     // fetch("http://localhost:3000/categories")
     // .then(resp => resp.json())
@@ -77,7 +77,7 @@ import {withRouter} from 'react-router-dom'
     //     })
     // })
 
-  }
+  
 
   handleResp = (resp) => {
     if (resp.user) {
@@ -139,7 +139,7 @@ import {withRouter} from 'react-router-dom'
   }
 
   renderProjectList = () => {
-    return <ProjectList/>
+    return <ProjectIndex/>
   }
 
   renderHome =() =>{
@@ -157,7 +157,7 @@ import {withRouter} from 'react-router-dom'
     return (
       <div className="App">
         <Switch>
-          <Route path="/" render={this.renderHome}></Route>
+          <Route exact path="/" render={this.renderHome}/>
           <Route path="/login" render={ this.renderForm } />
           <Route path="/register" render={ this.renderForm } />
           <Route path="/categories" render={ this.renderCategoryList }/>

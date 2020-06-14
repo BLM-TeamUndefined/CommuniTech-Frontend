@@ -1,5 +1,7 @@
 import React from 'react'
 import { ListGroup, Dropdown, Form } from 'react-bootstrap';
+import ProjectList from './ProjectList/ProjectList'
+
 
 
 class ProjectIndex extends React.Component{
@@ -7,8 +9,9 @@ class ProjectIndex extends React.Component{
         return(
             <div>
                 <div className="navbar">
-                    <div className="logo"></div>
-                    <div className="logo-name">CommuniTech</div>
+                <a href="/"><img className="logo" src={require("./logo.png")}/></a>
+
+                    
                     <div className="nav-box">
                         <a className="nav-option two exp" href="#" >Explore</a>
                         <a className="nav-option two" href="#" >My Projects</a>
@@ -51,6 +54,8 @@ class ProjectIndex extends React.Component{
                     </div>
 
                </div>
+
+                <ProjectList/>
 
             </div>
         )

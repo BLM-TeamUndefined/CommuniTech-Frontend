@@ -120,12 +120,12 @@ h1{
 }
 
 .logo{
-  height:50px;
-  width:70px;
-  border-radius: 50%;
-  background-color: lightcoral;
+  height:100px;
+ 
+
   position: relative;
   left: 80px;
+  bottom: 20px;
 }
 
 .logo-name{

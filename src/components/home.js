@@ -6,8 +6,9 @@ class Home extends React.Component{
         return(
             <div className="home-main">
                 <div className="navbar">
-                    <div className="logo"></div>
-                    <p className="logo-name">CommuniTech</p>
+                    {/* <div className="logo"></div> */}
+                    <a href="/"><img className="logo" src={require("./logo.png")}/></a>
+                    {/* <p className="logo-name">CommuniTech</p> */}
                     <div className="nav-box">
                         <a className="nav-option" href="#" >Volunteer</a>
                         <a className="nav-option" href="#" >Find Talent</a>
@@ -26,7 +27,7 @@ class Home extends React.Component{
                             Let's get to work.
                         </h2>
                         <p className="mission">We connect talented designers, developers, and engineers with mission driven POC organizations who could use a helping hand.</p>
-                        <button className="direct-button one">Find a Project</button>
+                        <a href="/projects"> <button className="direct-button one">Find a Project</button></a>
                         <button className="direct-button two">Find Talent</button>
 
 
