@@ -4,11 +4,11 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
-import categoryImg from '../categories.png';
-import companyImg from  '../company.png';
-import timelineImg from '../timeline.png';
-import skillsImg from '../skills.png';
-import teamImg from '../team.png';
+import categoryImg from './categories.png';
+import companyImg from  './company.png';
+import timelineImg from './timeline.png';
+import skillsImg from './skills.png';
+import teamImg from './team.png';
 
 
 class Project extends React.Component {

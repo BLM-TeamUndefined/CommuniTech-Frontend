@@ -26,8 +26,11 @@ function UserForm() {
         //pass register as ref to handle and track changes. Don't need to track changes and values manually
         //onSubmit as a callback - returns an object with all our form data
         //pass validations to register fn as optional arguments
-        <div>
+        <>
+       <div className="navbar">
+       <a href="/"><img className="logo" src={require("./logo.png")}/></a>
 
+       </div>
    <Container>
         <Row>
         <Col md={{ span: 6, offset: 3 }}>
@@ -113,7 +116,7 @@ function UserForm() {
     </Container>
         
 
-
+    </>
     )
 }
 
