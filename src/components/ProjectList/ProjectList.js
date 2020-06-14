@@ -4,9 +4,10 @@ import Project from '../Project/Project';
 
 class ProjectList extends React.Component {
     state = {
-      projects: []
+      projects: [] 
     }
   
+
     componentDidMount(){
       fetch("http://localhost:3000/projects")
           .then(resp => resp.json())
@@ -16,17 +17,24 @@ class ProjectList extends React.Component {
     }
 
     renderProjects = () => {
-        console.log(this.state.projects);
-        
-        // this.state.projects.map(org => {
-        //     return <Project key={org.id} org={org}/>;
-        // })
+      console.log(this.props.projects);
+       return this.props.projects 
+        ?
+          this.props.projects.map(project => {
+          return <Project  key={project.id} project={project} renderProjects={this.props.project}/>;
+        })
+        :
+        this.state.projects.map(project => {
+            console.log(project)
+            return <Project  key={project.id} project={project}/>;
+        })
     }
 
     render() {
       return(
+        
           <div className="ProjectList">
-              {this.renderProjects()}
+            {this.renderProjects()}
           </div>
       );
     }

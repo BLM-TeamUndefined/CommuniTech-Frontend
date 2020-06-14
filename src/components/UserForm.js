@@ -23,10 +23,11 @@ function UserForm() {
     }
 
     return (
-
         //pass register as ref to handle and track changes. Don't need to track changes and values manually
         //onSubmit as a callback - returns an object with all our form data
         //pass validations to register fn as optional arguments
+        <div>
+
    <Container>
         <Row>
         <Col md={{ span: 6, offset: 3 }}>
