@@ -5,7 +5,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import './UserForm.css'
+import './UserForm.css';
 
 
 
@@ -27,8 +27,7 @@ const UserForm = () => {
         <Row>
         <Col md={{ span: 6, offset: 3 }}>
         <div>
-            <h1>Form Component</h1>
-            <h2>Sign up as a Professional</h2>
+            <h2>Individual Sign Up</h2>
             {/*
             <form onSubmit={handleSubmit(onSubmit)}>
                 <input type="text" placeholder="Username" autoComplete="off" name="username" ref={register}/>
