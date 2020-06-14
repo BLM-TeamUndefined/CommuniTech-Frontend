@@ -1,0 +1,11 @@
+.overlay:hover {
+    background-color: rgba(255, 184, 184, 0.487);
+	opacity: 1;
+    transition: 1s all;
+    height: 100%;
+    width: 100%;
+}
+
+.overlay:visited {
+    background-color: rgba(255, 184, 184, 0.487);
+}
