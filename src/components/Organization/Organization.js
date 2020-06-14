@@ -17,4 +17,4 @@ function Organization() {
         );
 }
 
-export default Project;
+export default Organization;
