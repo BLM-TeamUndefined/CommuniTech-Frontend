@@ -1,7 +1,7 @@
 
 import React from 'react';
 import {Switch, Route} from 'react-router-dom'
-import Form from './components/Form'
+import UserForm from './components/UserForm'
 // import NavBar from './components/NavBar'
 import CategoryList from './components/CategoryList/CategoryList'
 import OrganizationList from './components/OrganizationList/OrganizationList'
@@ -89,9 +89,9 @@ import {withRouter} from 'react-router-dom'
 
   renderForm = (routerProps) => {
     if(routerProps.location.pathname === "/login"){
-      return <Form formName="Login Form" handleSubmit={this.handleLoginSubmit}/>
+      return <UserForm formName="Login Form" handleSubmit={this.handleLoginSubmit}/>
     } else if (routerProps.location.pathname === "/register") {
-      return <Form formName="Register Form" handleSubmit={this.handleRegisterSubmit}/>
+      return <UserForm formName="Register Form" handleSubmit={this.handleRegisterSubmit}/>
     }
   }
 
