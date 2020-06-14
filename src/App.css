@@ -36,3 +36,183 @@
     transform: rotate(360deg);
   }
 }
+
+/* -------------Project Component ------------ */
+.navbar{
+  position: relative;
+
+  top:0;
+  height: 100px;
+  width: 100%;
+}
+
+.project{
+  height: 100vh;
+  
+}
+h1{
+  color: white;
+}
+
+.title{
+  margin: auto;
+
+}
+
+.org-img{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: silver;
+  position: relative;
+  top: 140px;
+  margin-left: 300px;
+  
+  
+}
+.org-name{
+  position: relative;
+  width: 100px;
+  position: relative;
+  top: 140px;
+  margin-left: 300px;
+}
+
+.desc-title{
+  margin: auto;
+  position: relative;
+  top: 50px;
+}
+
+.desc-content{
+  margin: auto;
+  position: relative;
+  top: 55px;
+  width: 500px;
+}
+
+.expec-title{
+  margin: auto;
+  position: relative;
+  top: 80px;
+}
+
+.expec-content{
+  margin: auto;
+  position: relative;
+  top: 85px;
+  width: 500px;
+}
+
+
+/* ------------Home Component------------- */
+.main-img{
+  height: 700px;
+  float: right;
+  position: relative;
+  
+  top: 10px;
+}
+
+.logo{
+  height:50px;
+  width:70px;
+  border-radius: 50%;
+  background-color: lightcoral;
+  position: relative;
+  left: 70px;
+  top: 35px;
+}
+
+.logo-name{
+  float: left;
+  position: relative;
+  left: 160px;
+  margin-top: 0px;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Bodoni 72"
+}
+
+.nav-option{
+  padding: 45px;
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  left: 90px;
+  font-family: 'Avenir';
+}
+
+.login{
+  float: right;
+  position: relative;
+  right: 80px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+  bottom: 10px;
+  color:  rgb(134, 134, 230);
+  font-family: 'Avenir';
+}
+
+button.login{
+  background-color:  rgb(134, 134, 230);
+  color: white;
+  border-radius: 35%;
+  text-decoration: none;
+  outline: none;
+  width: 113px;
+
+}
+
+.login.sign{
+  position: relative;
+  right: 110px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+
+
+.text-content{
+  width:700px;
+  position: relative;
+  top:200px;
+  left: 100px;
+  text-align: left;
+  font-size: 36px;
+  font-family: "Bodoni 72 Bold";
+  margin-bottom: -200px;
+  margin-top: -10px;
+}
+.text-main{
+}
+
+.mission{
+  font-size: 24px;
+  width: 500px;
+  margin-bottom: -100px;
+  font-family: 'Avenir';
+}
+
+.direct-button{
+  position: relative;
+  top: 120px;
+  margin-right: 50px;
+  padding: 15px;
+  color: white;
+  font-family: "Avenir Heavy";
+
+}
+
+button.direct-button.one{
+  background-color:  rgb(134, 134, 230);
+}
+
+button.direct-button.two{
+  background-color:  rgb(44, 44, 80);
+}
+
