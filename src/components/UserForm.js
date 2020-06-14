@@ -42,12 +42,13 @@ const UserForm = () => {
             </form>
             */}
 
-            <form onSubmit={handleSubmit(onSubmit)}>
+      
+<form onSubmit={handleSubmit(onSubmit)}>
                 <Form.Group as={Row} controlId="Email">
                     <Form.Label column sm={2}>
                     </Form.Label>
                     <Col sm={10}>
-                    <Form.Control type="email" placeholder="Email" />
+                    <Form.Control name="email" type="email" placeholder="Email" />
                     </Col>
                 </Form.Group>
 
@@ -55,7 +56,7 @@ const UserForm = () => {
                     <Form.Label column sm={2}>
                     </Form.Label>
                     <Col sm={10}>
-                    <Form.Control type="username" placeholder="Username" ref={register} />
+                    <Form.Control name="username" type="username" placeholder="Username" ref={register} />
                     {errors.password && <p>Password must be at least 8 characters long</p>}
                     </Col>
                 </Form.Group>
@@ -64,7 +65,7 @@ const UserForm = () => {
                     <Form.Label column sm={2}>
                     </Form.Label>
                     <Col sm={10}>
-                    <Form.Control type="password" placeholder="Password" ref={register({required: true, minLength: 8})} />
+                    <Form.Control name="password" type="password" placeholder="Password" ref={register({required: true, minLength: 8})} />
                     </Col>
                 </Form.Group>
 
@@ -72,7 +73,7 @@ const UserForm = () => {
                     <Form.Label column sm={2}>
                     </Form.Label>
                     <Col sm={10}>
-                    <Form.Control type="profession" placeholder="Profession" ref={register} />
+                    <Form.Control name="profession" type="profession" placeholder="Profession" ref={register} />
                     </Col>
                 </Form.Group>
 
@@ -80,7 +81,7 @@ const UserForm = () => {
                     <Form.Label column sm={2}>
                     </Form.Label>
                     <Col sm={10}>
-                    <Form.Control type="bio" placeholder="Bio" ref={register} as="textarea" rows="3" />
+                    <Form.Control name="bio" type="bio" placeholder="Bio" ref={register} as="textarea" rows="3" />
                     </Col>
                 </Form.Group>
 
@@ -88,7 +89,7 @@ const UserForm = () => {
                     <Form.Label column sm={2}>
                     </Form.Label>
                     <Col sm={10}>
-                    <Form.Control type="skills" placeholder="Skills" ref={register} as="textarea" rows="3" />
+                    <Form.Control name="skills" type="skills" placeholder="Skills" ref={register} as="textarea" rows="3" />
                     </Col>
                 </Form.Group>
                 
