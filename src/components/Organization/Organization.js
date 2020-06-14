@@ -10,18 +10,18 @@ function Organization(props) {
     const [projects, setProjects] = useState(undefined)
     const [renderOrgs, setRenderOrgs] = useState(false)
  
-    useEffect(() => {
-        console.log(props.projects)
-        fetch("http://localhost:3000/projects")
-        .then(resp => resp.json())
-        .then(projects => {
-        // const filteredProjects = projects.filter(project => project.name === props.org.project )
+    // useEffect(() => {
+    //     console.log(props.projects)
+    //     fetch("http://localhost:3000/projects")
+    //     .then(resp => resp.json())
+    //     .then(projects => {
+    //     // const filteredProjects = projects.filter(project => project.name === props.org.project )
            
               
-        //    })
-        //    setProjects(projects)
+    //     //    })
+    //     //    setProjects(projects)
          
-        })})
+    //     })})
 
 
 
