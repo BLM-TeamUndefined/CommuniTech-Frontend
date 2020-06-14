@@ -25,6 +25,12 @@ function UserForm() {
         //onSubmit as a callback - returns an object with all our form data
         //pass validations to register fn as optional arguments
 
+        <>
+       <div className="navbar">
+       <a href="/"><img className="logo" src={require("./logo.png")}/></a>
+
+
+       </div>
    <Container>
         <Row>
         <Col md={{ span: 6, offset: 3 }}>
@@ -108,6 +114,11 @@ function UserForm() {
         </Col>
       </Row>
     </Container>
+
+        
+
+    </>
+
     )
 }
 

@@ -15,7 +15,7 @@ class Home extends React.Component{
                         <a className="nav-option" href="#" >How It Works</a>
 
                         <button className="login">Login</button>
-                        <a className="login sign" href="#"> Sign Up</a>
+                        <a className="login sign" href="/accountType"> Sign Up</a>
                     </div>
                 </div>
                 <main>
