@@ -1,7 +1,7 @@
 import React from 'react'
 import {useForm} from 'react-hook-form'
 
-const Form = () => {
+function UserForm() {
 
 //useForm Hook
     const {register, handleSubmit, errors} = useForm();
@@ -12,6 +12,7 @@ const Form = () => {
     }
 
     return (
+    
         //pass register as ref to handle and track changes. Don't need to track changes and values manually
         //onSubmit as a callback - returns an object with all our form data
         //pass validations to register fn as optional arguments
@@ -32,4 +33,4 @@ const Form = () => {
     )
 }
 
-export default Form;
+export default UserForm;
