@@ -6,7 +6,7 @@ class ProjectList extends React.Component {
     state = {
       projects: []
     }
-  
+
     componentDidMount(){
       fetch("http://localhost:3000/projects")
           .then(resp => resp.json())
@@ -16,11 +16,9 @@ class ProjectList extends React.Component {
     }
 
     renderProjects = () => {
-        console.log(this.state.projects);
-        
-        // this.state.projects.map(org => {
-        //     return <Project key={org.id} org={org}/>;
-        // })
+        return this.state.projects.map(project => {
+            return <Project key={project.id} project={project}/>;
+        })
     }
 
     render() {
@@ -30,7 +28,7 @@ class ProjectList extends React.Component {
           </div>
       );
     }
-  
+
   }
 
 export default ProjectList;
