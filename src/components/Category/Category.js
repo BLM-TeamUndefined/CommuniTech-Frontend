@@ -26,7 +26,7 @@ class Category extends React.Component {
 
     handleClick = () => {
         // console.log(this.state.organizationsByName);
-        this.setState({renderOrgs: true})
+        this.setState({renderOrgs: !this.state.renderOrgs})
         
     }
 
@@ -43,6 +43,7 @@ class Category extends React.Component {
                 <CategorizedOrgs 
                 organizations = {this.state.organizations}
                 projects = {this.state.projects}
+                handleClick = {this.handleClick}
                 />
                 <div className="Category">
                 <div className="image-container">

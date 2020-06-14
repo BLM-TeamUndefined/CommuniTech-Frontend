@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import CategorizedOrg from '../CategorizedOrg/CategorizedOrg'
 
 
 function CategorizedOrgs(props) {
+
+    const [displayOrgs, setDisplayOrgs] = useState(false)
 
     const categoryOrgs = () => {
         console.log(props)
@@ -16,11 +18,18 @@ function CategorizedOrgs(props) {
             />
         })
     }
+
+    const handleClick = () => {
+        props.handleClick()
+    }
     
 
     return (
+
+        
         <div>
          {categoryOrgs()}
+        <button onClick={handleClick}>Back to Category</button>
         </div>
     )
 }
