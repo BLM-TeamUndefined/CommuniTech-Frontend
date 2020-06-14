@@ -24,12 +24,12 @@ import {withRouter} from 'react-router-dom'
     token: "",
     categories: [ {
       id: 1,
-      name: 'Arts',
+      name: 'Arts & Culture',
       image: 'https://www.kindpng.com/picc/m/74-742163_artist-pallette-art-icon-transparent-background-hd-png.png'
       },
       {
         id: 2,
-        name: 'Community',
+        name: 'community improvement',
         image: 'https://www.kindpng.com/picc/m/153-1538896_community-icon-transparent-background-png-download-transparent-transparent.png'
       },
       {
@@ -40,6 +40,16 @@ import {withRouter} from 'react-router-dom'
         {
           id: 4,
           name: 'Mental Health',
+          image: 'https://cdn.iconscout.com/icon/premium/png-512-thumb/mental-illness-1734294-1472036.png'
+        },
+        {
+          id: 5,
+          name: 'Technology',
+          image: 'https://cdn.iconscout.com/icon/premium/png-512-thumb/mental-illness-1734294-1472036.png'
+        },
+        {
+          id: 6,
+          name: 'Humanities',
           image: 'https://cdn.iconscout.com/icon/premium/png-512-thumb/mental-illness-1734294-1472036.png'
         }]
   }
