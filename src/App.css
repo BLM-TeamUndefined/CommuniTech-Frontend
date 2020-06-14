@@ -41,9 +41,10 @@
 .navbar{
   position: relative;
 
-  top:0;
+  top: 35px;
   height: 100px;
   width: 100%;
+  padding: 0px;;
 }
 
 .project{
@@ -114,39 +115,45 @@ h1{
   top: 10px;
 }
 
+.navbox{
+  width: 600px;
+}
+
 .logo{
   height:50px;
   width:70px;
   border-radius: 50%;
   background-color: lightcoral;
   position: relative;
-  left: 70px;
-  top: 35px;
+  left: 80px;
 }
 
 .logo-name{
   float: left;
   position: relative;
-  left: 160px;
-  margin-top: 0px;
+  right: 200px;
   font-size: 24px;
   font-weight: bold;
-  font-family: "Bodoni 72"
+  font-family: "Bodoni 72";
+ 
+}
+
+.nav-box{
+  margin: 0px 100px 0px 0px;
 }
 
 .nav-option{
-  padding: 45px;
+  padding: 0px 40px 0px 20px;
   font-size: 16px;
   font-weight: bold;
   position: relative;
-  left: 90px;
   font-family: 'Avenir';
 }
 
 .login{
   float: right;
   position: relative;
-  right: 80px;
+  /* right: 80px; */
   font-size: 16px;
   font-weight: bold;
   padding: 10px;
@@ -167,7 +174,7 @@ button.login{
 
 .login.sign{
   position: relative;
-  right: 110px;
+  /* right: 110px; */
 }
 
 a{
@@ -183,12 +190,15 @@ a{
   top:200px;
   left: 100px;
   text-align: left;
-  font-size: 36px;
-  font-family: "Bodoni 72 Bold";
+ 
+ 
   margin-bottom: -200px;
   margin-top: -10px;
 }
 .text-main{
+   font-size: 36px;
+   font-family: "Bodoni 72 Bold";
+   font-weight: bold;
 }
 
 .mission{
@@ -205,6 +215,8 @@ a{
   padding: 15px;
   color: white;
   font-family: "Avenir Heavy";
+  border-radius: 5%;
+
 
 }
 
@@ -216,3 +228,67 @@ button.direct-button.two{
   background-color:  rgb(44, 44, 80);
 }
 
+/* ------------ProjectIndex------------------- */
+
+
+.nav-option.two.exp{
+  color:  rgb(134, 134, 230);
+}
+
+.graphic{
+  position: relative;
+  top: 80px;
+  height: 200px;
+  width: 100%;
+  background-color: #E9ECF5;
+}
+
+.graphic-img{
+  height: 300px;
+  position: relative;
+  bottom: 125px;
+  left: 100px;
+}
+
+.graphic-title{
+  font-family: "Bodoni 72 Bold";
+  float: left;
+  font-size: 60px;
+  font-weight: bolder;
+  position: relative;
+  left: 100px;
+
+
+}
+
+.graphic-text{
+  position: relative;
+  width: 400px;
+  text-align: left;
+  margin-bottom: -100px;
+  left: 100px;
+  font-family: "Avenir Book";
+  font-size: 24px;
+
+}
+
+.filter-options{
+  position: relative;
+  top: 200px;
+  left: 100px;
+  flex-direction: row;
+}
+
+.searchbar{
+  width: 300px;
+  float: right;
+  /* margin: auto; */
+  position: relative;
+  right: 200px;
+  bottom: 45px;
+ 
+}
+
+.form-control{
+  text-align: center;
+}
