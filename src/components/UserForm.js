@@ -9,7 +9,10 @@ import './UserForm.css';
 
 
 
-const UserForm = () => {
+
+
+function UserForm() {
+
 
 //useForm Hook
     const {register, handleSubmit, errors} = useForm();
@@ -20,6 +23,7 @@ const UserForm = () => {
     }
 
     return (
+
         //pass register as ref to handle and track changes. Don't need to track changes and values manually
         //onSubmit as a callback - returns an object with all our form data
         //pass validations to register fn as optional arguments
@@ -27,9 +31,10 @@ const UserForm = () => {
         <Row>
         <Col md={{ span: 6, offset: 3 }}>
         <div>
+
             <h2>Individual Sign Up</h2>
-            {/*
-            <form onSubmit={handleSubmit(onSubmit)}>
+
+            {/* <form onSubmit={handleSubmit(onSubmit)}>
                 <input type="text" placeholder="Username" autoComplete="off" name="username" ref={register}/>
                 <input type="password" placeholder="Password" autoComplete="off" name="password" ref={register({required: true, minLength: 8})}/>
                 {errors.password && <p>Password must be at least 8 characters long</p>}
@@ -38,8 +43,9 @@ const UserForm = () => {
                 <input type="text" placeholder="Profession" name="profession" ref={register}/>
                 <input type="text" placeholder="TechStack" name="techstack" ref={register}/>
                 <input type="submit"/>
-            </form>
-            */}
+            </form> */}
+
+
 
       
 <form onSubmit={handleSubmit(onSubmit)}>
@@ -105,6 +111,8 @@ const UserForm = () => {
       </Row>
     </Container>
         
+
+
     )
 }
 

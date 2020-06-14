@@ -23,7 +23,26 @@ import {withRouter} from 'react-router-dom'
       bio: ""
     },
     token: "",
-    categories: []
+    categories: [ {
+      id: 1,
+      name: 'Arts',
+      image: 'https://www.kindpng.com/picc/m/74-742163_artist-pallette-art-icon-transparent-background-hd-png.png'
+      },
+      {
+        id: 2,
+        name: 'Community',
+        image: 'https://www.kindpng.com/picc/m/153-1538896_community-icon-transparent-background-png-download-transparent-transparent.png'
+      },
+      {
+        id: 3,
+        name: 'Education',
+        image: 'https://image.flaticon.com/icons/svg/29/29302.svg'
+        },
+        {
+          id: 4,
+          name: 'Mental Health',
+          image: 'https://cdn.iconscout.com/icon/premium/png-512-thumb/mental-illness-1734294-1472036.png'
+        }]
   }
   
 
@@ -38,13 +57,13 @@ import {withRouter} from 'react-router-dom'
       .then(this.handleResp)
     }
 
-    fetch("http://localhost:3000/categories")
-    .then(resp => resp.json())
-    .then(categoriesArray => {
-        this.setState({
-            categories: categoriesArray
-        })
-    })
+    // fetch("http://localhost:3000/categories")
+    // .then(resp => resp.json())
+    // .then(categoriesArray => {
+    //     this.setState({
+    //         categories: categoriesArray
+    //     })
+    // })
 
   }
 
