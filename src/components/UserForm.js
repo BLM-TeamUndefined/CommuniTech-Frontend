@@ -9,8 +9,6 @@ import './UserForm.css'
 
 
 
-
-
 function UserForm() {
 
 
@@ -97,8 +95,6 @@ function UserForm() {
         </Col>
       </Row>
     </Container>
-        
-        </div>
 
     )
 }
