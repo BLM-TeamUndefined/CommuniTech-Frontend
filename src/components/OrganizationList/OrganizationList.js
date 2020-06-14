@@ -5,27 +5,32 @@ import Organization from '../Organization/Organization';
 class OrganizationList extends React.Component {
 
     state = {
-        organizations: [],
-        projects: []
+        organizations: []
     }
 
-    componentDidMount(){
+     componentDidMount(){
+
+      
         fetch("http://localhost:3000/organizations")
           .then(resp => resp.json())
           .then(data => {
-              this.setState({organizations: data.organizations, projects: data.projects })
+              console.log(data)
+              this.setState({organizations: data})
+        })
+    }
+
+    mapOrgs =()=>{
+        return this.state.organizations.map(org => {  
+            return <Organization key={org.id} org={org} projects={org.projects}/>;
         })
     }
 
     render(){
-        console.log(this.state.organizations);
+        console.log(this.state.organizations)
         return(
             <div className="OrganizationList">
                 {
-                this.state.organizations.map(org => {  
-                    let filteredProjects = this.state.projects.filter(project => project.name === this.props.org.project)
-                    return <Organization key={org.id} org={org} projects={filteredProjects}/>;
-                })
+                    this.mapOrgs()
                 }
             </div>
         );

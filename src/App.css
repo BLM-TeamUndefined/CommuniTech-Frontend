@@ -41,7 +41,7 @@
 .navbar{
   position: relative;
 
-  top: 35px;
+  /* top: 35px; */
   height: 100px;
   width: 100%;
   padding: 0px;;
@@ -117,15 +117,15 @@ h1{
 
 .navbox{
   width: 600px;
+  position: relative;
+  top: 35px;
 }
 
 .logo{
   height:100px;
- 
-
   position: relative;
   left: 80px;
-  bottom: 20px;
+  top: 10px;
 }
 
 .logo-name{
@@ -291,4 +291,9 @@ button.direct-button.two{
 
 .form-control{
   text-align: center;
+}
+
+.showing{
+  float: left;
+  padding: 10px;
 }

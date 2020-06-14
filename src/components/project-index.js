@@ -52,6 +52,7 @@ class ProjectIndex extends React.Component{
                     <div className="searchbar">
                         <Form.Control placeholder="Search all opportunities"></Form.Control>
                     </div>
+                    <div className="showing">Showing all Projects</div>
 
                </div>
 
