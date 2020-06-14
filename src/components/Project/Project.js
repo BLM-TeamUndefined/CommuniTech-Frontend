@@ -2,22 +2,22 @@ import React from 'react';
 import './Project.css';
 
 
-function Project(props) {
+class Project extends React.Component {
 
-    console.log(props);
-    
-
-    return(
-        <div className="Project">
-            <h2> {props.project.name} </h2>
-            <div className="Project-information">
-                <p> {props.project.description} </p>
-                <p> {props.project.expectations} </p>
-                <p> {props.project.timeline} </p>
-                <p> {props.project.team_size} </p>
-            </div>
-        </div>
-    );
+    render() {
+      console.log(this.props);
+      return(
+          <div className="Project">
+              <h2> {this.props.project.name} </h2>
+              <div className="Project-information">
+                  <p> Description: {this.props.project.description} </p>
+                  <p> Expectations: {this.props.project.expectations} </p>
+                  <p> Duration: {this.props.project.timeline} </p>
+                  <p> Team Size: {this.props.project.team_size} </p>
+              </div>
+          </div>
+      );
+    }
 }
 
 export default Project;
