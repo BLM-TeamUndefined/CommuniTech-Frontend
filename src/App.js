@@ -1,5 +1,4 @@
 import React from 'react';
-import Form from './components/Form'
 import Project from './components/project'
 import Home from './components/home'
 import ProjectIndex from './components/project-index'
@@ -143,6 +142,10 @@ import {withRouter} from 'react-router-dom'
     return <ProjectList/>
   }
 
+  renderHome =() =>{
+    return <Home/>
+  }
+
   // renderProfile = (routerProps) => {
   //   return <ProfileContainer user={this.state.user} token={this.state.token}/>
   // }
@@ -154,7 +157,7 @@ import {withRouter} from 'react-router-dom'
     return (
       <div className="App">
         <Switch>
-          
+          <Route path="/" render={this.renderHome}></Route>
           <Route path="/login" render={ this.renderForm } />
           <Route path="/register" render={ this.renderForm } />
           <Route path="/categories" render={ this.renderCategoryList }/>
