@@ -1,11 +1,15 @@
-
 import React from 'react';
+import Project from './components/project'
+import Home from './components/home'
+import ProjectIndex from './components/project-index'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import {Switch, Route} from 'react-router-dom'
-import userForm from './components/UserForm'
+import UserForm from './components/UserForm'
 // import NavBar from './components/NavBar'
 import CategoryList from './components/CategoryList/CategoryList'
 import OrganizationList from './components/OrganizationList/OrganizationList'
 import ProjectList from './components/ProjectList/ProjectList'
+import AccountType from './components/AccountType/AccountType'
 
 // import 'semantic-ui-css/semantic.min.css'
 import './App.css';
@@ -24,12 +28,12 @@ import {withRouter} from 'react-router-dom'
     token: "",
     categories: [ {
       id: 1,
-      name: 'Arts',
+      name: 'Arts & Culture',
       image: 'https://www.kindpng.com/picc/m/74-742163_artist-pallette-art-icon-transparent-background-hd-png.png'
       },
       {
         id: 2,
-        name: 'Community',
+        name: 'community improvement',
         image: 'https://www.kindpng.com/picc/m/153-1538896_community-icon-transparent-background-png-download-transparent-transparent.png'
       },
       {
@@ -41,20 +45,30 @@ import {withRouter} from 'react-router-dom'
           id: 4,
           name: 'Mental Health',
           image: 'https://cdn.iconscout.com/icon/premium/png-512-thumb/mental-illness-1734294-1472036.png'
+        },
+        {
+          id: 5,
+          name: 'Technology',
+          image: 'https://cdn.iconscout.com/icon/premium/png-512-thumb/mental-illness-1734294-1472036.png'
+        },
+        {
+          id: 6,
+          name: 'Humanities',
+          image: 'https://cdn.iconscout.com/icon/premium/png-512-thumb/mental-illness-1734294-1472036.png'
         }]
   }
   
 
-  componentDidMount() {
-    if (localStorage.token) {
-      fetch("http://localhost:3000/professional_persist",{
-        headers: {
-          "Authorization": `Bearer ${localStorage.token}`
-        }
-      })
-      .then(resp => resp.json())
-      .then(this.handleResp)
-    }
+  // componentDidMount() {
+  //   if (localStorage.token) {
+  //     fetch("http://localhost:3000/professional_persist",{
+  //       headers: {
+  //         "Authorization": `Bearer ${localStorage.token}`
+  //       }
+  //     })
+  //     .then(resp => resp.json())
+  //     .then(this.handleResp)
+  //   }
 
     // fetch("http://localhost:3000/categories")
     // .then(resp => resp.json())
@@ -64,7 +78,7 @@ import {withRouter} from 'react-router-dom'
     //     })
     // })
 
-  }
+  
 
   handleResp = (resp) => {
     if (resp.user) {
@@ -108,10 +122,14 @@ import {withRouter} from 'react-router-dom'
 
   renderForm = (routerProps) => {
     if(routerProps.location.pathname === "/login"){
-      return <userForm formName="Login Form" handleSubmit={this.handleLoginSubmit}/>
+      return <UserForm formName="Login Form" handleSubmit={this.handleLoginSubmit}/>
     } else if (routerProps.location.pathname === "/register") {
-      return <userForm formName="Register Form" handleSubmit={this.handleRegisterSubmit}/>
+      return <UserForm formName="Register Form" handleSubmit={this.handleRegisterSubmit}/>
     }
+  }
+
+  renderAccountType = () => {
+    return <AccountType />
   }
 
   renderCategoryList = () => {
@@ -126,7 +144,11 @@ import {withRouter} from 'react-router-dom'
   }
 
   renderProjectList = () => {
-    return <ProjectList/>
+    return <ProjectIndex/>
+  }
+
+  renderHome =() =>{
+    return <Home/>
   }
 
   // renderProfile = (routerProps) => {
@@ -140,7 +162,8 @@ import {withRouter} from 'react-router-dom'
     return (
       <div className="App">
         <Switch>
-          
+          <Route path="/accountType" render={ this.renderAccountType } />
+          <Route exact path="/" render={this.renderHome}/>
           <Route path="/login" render={ this.renderForm } />
           <Route path="/register" render={ this.renderForm } />
           <Route path="/categories" render={ this.renderCategoryList }/>
@@ -154,4 +177,3 @@ import {withRouter} from 'react-router-dom'
 }
 
 export default withRouter(App)
-
