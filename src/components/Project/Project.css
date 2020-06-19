@@ -1,0 +1,37 @@
+.Project{
+    border-width: .5px;
+    margin-bottom: 100px;
+    box-shadow: 1px 10px 6px -6px #777;
+}
+
+.Project img{
+    position: relative;
+}
+
+.icon{
+    height: 200px;
+    /* float: left; */
+}
+
+.details {
+    padding-top: 3em;
+}
+
+.main-info {
+    padding-top: 1em;
+}
+
+#view-button {
+    height: 48px;
+    width: 173px;
+    border-radius: 4px;
+    background-color: #8F8EDB;
+}
+.icon-pro{
+    height: 30px;
+    float: left;
+}
+
+.details{
+    text-align: left;
+}
